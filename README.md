@@ -3,13 +3,17 @@ PROJECT FOR PREDICTING BRAND MEANING FROM EMPLOYEES' PERSPECTIVE
 
 This research presents a supervised learning framework that applies machine learning models, including feedforward neural networks (FNNs), to predict brand perception and evaluate its drivers across employee and customer groups. The analysis focuses on two core constructs: brand meaning (“Do you know what your company’s brand means?”), and brand care (“Do you care about your company’s brand?”). Binary classification techniques are used for the two core constructs. The study identifies the most influential predictors associated with positive brand alignment by training models on structured organizational and behavioral data. It also evaluates how different metrics (e.g., precision, recall, F1-score, and AUC) capture performance across different Machine Learning (ML) models. The findings offer actionable insights into internal branding dynamics and demonstrate the practical value of machine learning in uncovering perceptual gaps and engagement drivers. The research is positioned at the intersection of applied AI, organizational analytics, and brand strategy.
 
+
 I. MODELING BRAND PERCEPTION ACROSS EMPLOYEES
+
 Understanding how a company’s brand is perceived internally is central to maintaining a consistent, impactful identity. In this study, we define and model two distinct yet interconnected brand constructs: brand meaning (whether employees/customers understand what the brand stands for) and brand care (the level of emotional and behavioral engagement with the brand). To streamline terminology, we refer to these constructs collectively as brand perception components.
 My objective is to quantitatively model these components using supervised machine learning. Survey participants responded to direct binary questions such as "Do you know what your company’s brand means?" and "Do you care about your company’s brand?" These served as target variables for classification tasks.
 Predictive feature sets were carefully chosen, preprocessed, and encoded to support multiple modeling pipelines, including FNNs and decision trees. For every research topic, the chosen feature set leads the interviewed employee to answer the corresponding “target” question. Based on all the answers to the target question, ML models predict the features’ importance and impact on the target question. 
 By applying interpretable models alongside high-performing neural networks, I gain both predictive accuracy and actionable insights. Feature impact, as a key output metric, helps organizations understand not only what the brand perception is but why it exists—offering a foundation for strategic improvement.
 
+
 II.	RESEARCH PROCESS AND DATA COLLECTION
+
 For the purpose of this research, a Macedonian telecommunications operator was chosen, which offers to its customers a wide array of top excellence telecommunication services and contents within the scope of the fixed and mobile networks, broadband services, and integrated solutions, also including TV over Internet Protocol (IPTV). The company’s product portfolio includes Internet Protocol–based services, data transfer, sale and lease of equipment, and services for system integration.
 A deductive research approach was used by using 2 different questionnaires:
 •	Brand Meaning questionnaire, and
@@ -21,7 +25,9 @@ Taking into account that the case company consists of four departments, from eve
 The top impactful features from the 3 different models are shown in the corresponding tables. Every table consists of four columns: Feature (short description of the feature), Impact % (feature impact on the model‘s target prediction in percentage), Impact Direction (direction of the feature impact on the model’s target prediction – Inc. or Dec.), and Impact Strength (the strength of the feature impact on the model‘s target prediction – High, Medium or Low). For the purpose of this research, I chose only the most impactful features, both in positive and negative directions.
 Comparing the features' impact of the three different models, it is clear that department features may capture hidden relationships or interactions with other features that the tree models cannot easily see.
 
+
 A.	BRAND MEANING
+
 The corresponding questionnaire consists of 12 questions which measure employee’s agreement on every metric in a Likert-scale from 1 to 5, and one “target” question - “Do the employees know what company’s brand mean?” which allows the employees to give a positive (yes) or negative (no) answer (“Table I”). The questions are considering different brand metrics: questions 1, 2, 3 and 4 (brand culture), questions 5 and 6 (brand personality), questions 7 and 8 (brand physique), questions 9 and 10 (brand relationship), question 11 (brand reflection) and question 12 (brand self-image). Further, questions 5, 6, 7, and 8 represent issues related to the company itself, whereas questions 11 and 12 reflect issues related to customers.
 "Tables II, III, and V” show the impact of the features on the model‘s prediction regarding whether employees understand the meaning of their company’s brand for the three ML models: Random Forest, CatBoost, and FNN, and “Tables IV and VI” show the corresponding model test scores.
 “Table II” shows that the increase in understanding the company mission and in knowing what to do to fulfill customer promises are the most positively impactful features on employees’ understanding of the brand meaning.
