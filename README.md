@@ -38,3 +38,23 @@ For the FNN network, I used 16 input neurons (each input neuron for a different 
 “Table V” shows that employee’s opinions from the services, marketing, and sales departments have a highly positive impact on the understanding of the brand meaning of all the company’s employees. On the opposite, employee’s opinions from the finance department have highly negative impact on the understanding of the brand meaning of all the company’s employees.
 The best evaluation scores come from FNN (16, 48, 24, 1), shown in “Table VI”.
 
+
+B.	BRAND CARE
+
+The corresponding questionnaire consists of 10 questions which measure employee’s perception of importance on every metric in a Likert-scale from 1 to 5, and one “target” question – “Do employees care about their company’s brand?” which allows the employees to give a positive (yes) or negative (no) answer, as shown on “Table VII”.
+Questions 1 and 2 reflect brand culture, questions 3 and 4 reflect brand personality, questions 5 and 6 reflect brand physique, questions 7 and 8 reflect brand relationship, question 9 reflects brand reflection, and, finally, question 10 reflects brand self-image.
+"Tables VIII, IX, and XI” show the impact of the features on the model‘s prediction regarding whether employees understand the care of their company’s brand for the three ML models: Random Forest, CatBoost, and FNN, and “Tables X and XII” show the corresponding model’s test scores.
+"Table VIII” shows that the increase in importance of the company’s offer of products and services, as well as the importance of the customers’ and company’s expectations, are the most positively impactful features on employees’ care about their company’s brand.
+On the opposite end, the decrease in importance of applying and understanding a company’s mission, vision and values are the most negatively impactful features on employees’ care about their company’s brand.
+“Table IX” shows that the impact is similar to that of the Random Forest model.
+Both ML models show high values for the evaluation metrics, as shown on “Table X”.
+For the FNN network, I used 13 input neurons (each input neuron for a different feature) and 1 output neuron for the “target”. In order to find the best-performing FNN architecture, I tested several architectures with 2 hidden layers with different numbers of neurons.
+“Table XI” shows that employee’s opinions from the sales and services departments have highly positive impact on the employee’s care of their company’s brand. On the opposite, employee’s opinions from the finance and marketing departments have highly negative impact on the employee’s care about their company’s brand.
+The best evaluation scores come from FNN (13, 39, 19, 1) as shown on “Table XII”.
+
+IV.	CONCLUSIONS
+
+In this study, three distinct ML models- Random Forest (RF), CatBoost, and Feedforward Neural Network (FNN)- were employed to analyze the impact of various features on brand perception. By comparing the identified top impact features from each model, I gain insights into the different ways each model approaches the feature importance problem.
+The comparative analysis underscores the complementary nature of different ML models in understanding brand perception. While tree-based models highlight the importance of measurable, straightforward features, neural networks open the door to exploring deeper, less obvious aspects of brand perception. Future research could explore hybrid approaches, combining the strengths of both model types, to further refine the understanding of brand perception and its drivers.
+
+
